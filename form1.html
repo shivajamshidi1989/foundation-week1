@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>Order Form</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="page-header">
+        <h1 class="page-title">SOME HEADER</h1>
+        <p class="page-subtitle">Some optional stuff.</p>
+      </header>
+
+      <main class="order-form">
+        <section
+          class="form-header"
+          aria-labelledby="order-summary-title"
+        >
+          <h2
+            class="summary-title"
+            id="order-summary-title"
+          >
+            Order Summary
+          </h2>
+
+          <div class="summary-item summary-item-border">
+            <span>Total</span>
+            <span>$333 / month</span>
+          </div>
+
+          <div class="summary-item">
+            <span>Total</span>
+            <span>$100</span>
+          </div>
+        </section>
+
+        <form>
+          <div class="form-body">
+            <fieldset class="payment-method">
+              <legend class="section-title">
+                Payment Method
+              </legend>
+
+              <div class="payment-options">
+                <div>
+                  <input
+                    class="payment-radio"
+                    type="radio"
+                    name="payment-method"
+                    id="credit-card"
+                    value="credit-card"
+                    checked
+                  />
+
+                  <label
+                    class="payment-option"
+                    for="credit-card"
+                  >
+                    <img
+                      src="https://i.ibb.co/RpxyMFxT/cards.png"
+                      alt=""
+                    />
+
+                    <span>Credit / Debit</span>
+                  </label>
+                </div>
+
+                <div>
+                  <input
+                    class="payment-radio"
+                    type="radio"
+                    name="payment-method"
+                    id="paypal"
+                    value="paypal"
+                  />
+
+                  <label
+                    class="payment-option"
+                    for="paypal"
+                  >
+                    <img
+                      src="https://i.ibb.co/7tp16Sp6/paypal.png"
+                      alt=""
+                    />
+
+                    <span>PayPal</span>
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="card-info">
+              <legend class="section-title">
+                Card Info
+              </legend>
+
+              <div class="card-fields">
+                <div class="form-field card-number-field">
+                  <label for="card-number">
+                    Card Number
+                  </label>
+
+                  <input
+                    id="card-number"
+                    name="card-number"
+                    type="text"
+                    placeholder="1234 1234 1234 1234"
+                    autocomplete="cc-number"
+                    inputmode="numeric"
+                    required
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label for="card-expiry">
+                    Expiry Date
+                  </label>
+
+                  <input
+                    id="card-expiry"
+                    name="card-expiry"
+                    type="text"
+                    placeholder="MM / YY"
+                    autocomplete="cc-exp"
+                    inputmode="numeric"
+                    required
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label for="card-cvv">
+                    Security Code
+                  </label>
+
+                  <input
+                    id="card-cvv"
+                    name="card-cvv"
+                    type="text"
+                    placeholder="CVV"
+                    autocomplete="cc-csc"
+                    inputmode="numeric"
+                    required
+                  />
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <footer class="form-footer">
+            <button
+              class="buy-button"
+              type="submit"
+            >
+              Buy Now
+            </button>
+
+            <a
+              class="help-link"
+              href="need-help.html"
+            >
+              Need Help?
+            </a>
+          </footer>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
